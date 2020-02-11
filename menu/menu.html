@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title></title>
+		<script type="text/javascript">
+			(function(){
+				var docEI = document.documentElement;
+				function setRemUnit(){
+					var rem = docEI.clientWidth / 100;
+					docEI.style.fontSize = rem + 'pc';
+				}
+				setRemUnit();
+				window.addEventListener('resize',setRemUnit);
+				window.addEventListener('pageshow',function(e){
+					if(e.persisted){
+						setRemUnit();
+					}
+				})
+			})();
+		</script>
+		<style>
+			
+		</style>
+		<link rel="stylesheet" href="../lib/reset.css">
+		<link rel="stylesheet" href="../common/headerTab/headerTab.css">
+		<link rel="stylesheet" href="./left/left.css">
+		<link rel="stylesheet" href="./right/right.css">
+		<link rel="stylesheet" href="./shopBar/shopBar.css">
+		<link rel="stylesheet" href="../common/navHeader/navHeader.css">
+	</head>
+	<body>
+		<div class="nav">
+			<div class="back-icon"></div>
+			<h4 class="title">麦当劳餐厅</h4>
+		</div>
+		<div class="tab-bar"></div>
+		<div class="menu-inner">
+			<div class="left-bar">
+				<div class="left-bar-inner">
+					
+				</div>
+			</div>
+			<div class="right-content">
+				<p class="right-title"></p>
+				<div class="right-list">
+					<div class="right-list-inner"></div>
+				</div>
+				<!-- 购物车 -->
+				<div class="shop-bar"></div>
+				<div class="mask hide"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../lib/jquery.min.js"></script>
+		<script type="text/javascript" src="./left/left.js"></script>
+		<script type="text/javascript" src="./right/right.js"></script>
+		<script type="text/javascript" src="./shopBar/shopBar.js"></script>
+		<script type="text/javascript" src="../common/headerTab/headerTab.js"></script>
+	</body>
+</html>

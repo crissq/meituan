@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title></title>
+		<script type="text/javascript">
+			(function(){
+				var docEI = document.documentElement;
+				function setRemUnit(){
+					var rem = docEI.clientWidth / 100;
+					docEI.style.fontSize = rem + 'pc';
+				}
+				setRemUnit();
+				window.addEventListener('resize',setRemUnit);
+				window.addEventListener('pageshow',function(e){
+					if(e.persisted){
+						setRemUnit();
+					}
+				})
+			})();
+		</script>
+		<style>
+			
+		</style>
+		<link rel="stylesheet" href="../lib/reset.css">
+		<link rel="stylesheet" href="../common/bottomBar.css">
+		<link rel="stylesheet" href="contentList/orderList.css">
+		<link rel="stylesheet" href="header/header.css"/>
+	</head>
+	<body>
+		<div class="header">订单</div>
+		<div class="wrap">
+			<div class="order-list"></div>
+			<div class="loading">加载中</div>
+		</div>
+		<div class="bottom-bar"></div>
+		<script type="text/javascript" src="../lib/jquery.min.js"></script>
+		<script src="./contentList/contentList.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../common/bottomBar.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title></title>
+		<script type="text/javascript">
+			(function(){
+				var docEI = document.documentElement;
+				function setRemUnit(){
+					var rem = docEI.clientWidth / 100;
+					docEI.style.fontSize = rem + 'pc';
+				}
+				setRemUnit();
+				window.addEventListener('resize',setRemUnit);
+				window.addEventListener('pageshow',function(e){
+					if(e.persisted){
+						setRemUnit();
+					}
+				})
+			})();
+		</script>
+		<style>
+			
+		</style>
+		<link rel="stylesheet" href="./lib/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" href="./index/searchBar/searchBar.css">
+		<link rel="stylesheet" href="./css/list.css">
+		<link rel="stylesheet" href="common/bottomBar.css">
+		<link rel="stylesheet" type="text/css" href="css/star.css"/>
+		<link rel="stylesheet" type="text/css" href="css/category.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="search-bar">
+				<div class="bar-location">
+					<div class="location-icon"></div>
+					<div class="location-text">贵阳市</div>
+				</div>
+				<div class="search-btn">
+					<p class="place-holder">鸡翅</p>
+				</div>
+			</div>
+			<img class="header-img" src="https://tse4-mm.cn.bing.net/th/id/OIP.9PEfDw39i1HazJK0ztKFSgHaEU?w=300&h=175&c=7&o=5&dpr=1.5&pid=1.7" alt="">
+		</div>
+		<div class="category-content clearfix">
+			
+		</div>
+		<div class="list-content">
+			<h4 class="list-title">
+				<span class="title-line"></span>
+				<span>附近商家</span>
+				<span class="title-line"></span>
+			</h4>
+			<div class="list-wrap">
+				
+			</div>
+			<div class="loading">
+				加载中
+			</div>
+		</div>
+		<div class="bottom-bar">
+			
+		</div>
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script src="./js/category.js" type="text/javascript" charset="utf-8"></script>
+		<script src="common/bottomBar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/content-list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/star.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

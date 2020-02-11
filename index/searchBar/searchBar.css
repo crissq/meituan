@@ -1,0 +1,74 @@
+.search-bar{
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 0.2rem;
+}
+.search-bar .bar-location{
+	margin-right: 0.5rem;
+	border-radius: 0.35rem;
+	background: rgba(0,0,0,0.33);
+	width: 2.3rem;
+	height: 0.55rem;
+}
+.search-bar .location-icon{
+	display: inline-block;
+	position: relative;
+	width: 0.37rem;
+	height:0.45rem;
+	vertical-align: 0.2rem;
+	margin-left: 0.15rem;
+	background-image: url(../../img/locationIcon.png);
+	background-size: cover;
+	top: -0.24rem;
+}
+.search-bar .location-text{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	vertical-align: 0.32rem;
+	margin-left: -0.08rem;
+	font-size: 0.3rem;
+	top: -0.205rem;
+}
+.search-bar .location-text::after{
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(../../img/arrowIcon.png);
+	background-size: cover;
+	position: absolute;
+	right: 0.375rem;
+	left: 0.975rem;
+	top:0.075rem
+}
+.search-bar .search-btn{
+	position: relative;
+	width: 4.25rem;
+	height: 0.6rem;
+	background: #FFFFFF;
+	border-radius: 0.5rem;
+}
+.search-bar .search-btn::before{
+	content: '';
+	display: block;
+	width: 0.35rem;
+	height: 0.35rem;
+	background-image: url(../../img/searchIcon.png);
+	background-size: cover;
+	top: 0.13rem;
+	left: 0.2rem;
+	position: absolute;
+}
+.search-btn .place-holder{
+	color: #a9a9a9;
+	font-size: 0.325rem;
+	height: 100%;
+	margin-top: 0.13rem;
+	margin-left: 0.65rem;
+}

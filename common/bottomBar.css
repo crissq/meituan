@@ -1,0 +1,51 @@
+.bottom-bar{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 1.3rem;
+	display: flex;
+	border-top: 1px solid #b6b6b6;
+	background-color: rgba(245,246,246,0.95);
+}
+.bottom-bar .btn-item{
+	flex: 1;
+	display: flex;
+	font-size: 0.275rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color:#999
+}
+.bottom-bar .tab-icon{
+	margin-bottom: 0.1rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-size: cover;
+}
+.bottom-bar .index.btn-item .tab-icon{
+	background-image: url(../img/homeIcon.png);
+	background-size: cover;
+}
+.bottom-bar .my.btn-item .tab-icon{
+	background-image: url(../img/myIcon.png);
+	background-size: cover;
+}
+.bottom-bar .order.btn-item .tab-icon{
+	background: url(../img/orderIcon.png);
+	background-size: cover;
+}
+.bottom-bar .btn-item.active{
+	color: #000;
+}
+.bottom-bar .index.btn-item.active .tab-icon{
+	background: url(../img/homeIconActive.png);
+	background-size: cover;
+}
+.bottom-bar .my.btn-item.active .tab-icon{
+	background: url(../img/myIconActive.png);
+	background-size: cover;
+}
+.bottom-bar .or .btn-item.active .tab-icon{
+	background: url(../img/orderIconActive.png);
+	background-size: cover;
+}
